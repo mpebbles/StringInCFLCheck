@@ -1,0 +1,4 @@
+# CFG for balanced square brackets.
+# Must escape when multiple terminals/non-terminals present and end each
+# production must end with a semi-colon as done below.
+S-> \[\S\] | \S\S | \empty; 

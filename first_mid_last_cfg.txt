@@ -1,0 +1,7 @@
+# CFG for first char == mid char == last char.
+# Must escape when multiple terminals/non-terminals present and end each
+# production must end with a semi-colon as done below.
+
+S -> \a\U\a | \b\T\b;
+U -> \a\U\a | \a\U\b | \b\U\b | \b\U\a | \a;
+T -> \a\T\a | \a\T\b | \b\T\b | \b\T\a | \b;
