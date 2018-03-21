@@ -14,9 +14,6 @@ def contains_unit_productions(list_of_keys, productions):
             return True
     return False
 
-# returns tuple 
-# [0] is replaceable rule found
-# [1] key containing rule, [2] index in key
 def replaceable_rule_exists(cnf):
     """" Returns tuple. 
          [0] is replaceable rule found.
@@ -147,8 +144,6 @@ def reverse_grammar(gram):
             new_key = ''
     return ret
 
-# if A = [a, b, c], B = [d]
-# returns [ad,ae,bd,be,cd,ce]
 def get_options(A, B):
     """
     If A = [a, b, c], B = [d],
